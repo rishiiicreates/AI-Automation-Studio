@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased text-black selection:bg-brand-blue selection:text-white relative flex flex-col min-h-screen">
+      <body className="font-sans antialiased text-black selection:bg-brand-blue selection:text-white relative flex flex-col min-h-screen overflow-x-hidden w-full max-w-[100vw]">
         {/* Subtle light background pattern mimicking Wix */}
         <div 
           className="pointer-events-none fixed inset-0 z-[-1] h-full w-full opacity-30"
