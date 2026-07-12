@@ -26,23 +26,7 @@ export default function Footer() {
           <p className="text-black/50 text-lg max-w-sm font-light">
             An AI automation studio building workflow automation, agentic AI, and scalable infrastructure.
           </p>
-          <div className="mt-8 flex gap-4">
-            <MagneticButton>
-              <a href="#" className="w-12 h-12 rounded-full border border-black/20 flex items-center justify-center hover:bg-black hover:text-white transition-colors">
-                Tw
-              </a>
-            </MagneticButton>
-            <MagneticButton>
-              <a href="#" className="w-12 h-12 rounded-full border border-black/20 flex items-center justify-center hover:bg-black hover:text-white transition-colors">
-                Li
-              </a>
-            </MagneticButton>
-            <MagneticButton>
-              <a href="#" className="w-12 h-12 rounded-full border border-black/20 flex items-center justify-center hover:bg-black hover:text-white transition-colors">
-                Aw
-              </a>
-            </MagneticButton>
-          </div>
+
           <MagneticButton strength={0.1}>
             <a href="/request-consultation" className="mt-8 inline-flex items-center gap-4 text-sm font-mono uppercase tracking-widest cursor-pointer group hover:text-brand-blue transition-colors">
               Start A Project
