@@ -144,7 +144,7 @@ export default function ParallaxGallery() {
         <div ref={wrapper1Ref} className="h-[40vh] md:h-[60vh] relative mt-20 md:mt-0 z-10 overflow-hidden rounded-3xl border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
           <img 
             ref={img1Ref}
-            src="/team-collaborating.jpg" 
+            src="/team-collaborating-v2.jpg" 
             alt="Team collaborating at table" 
             className="absolute w-full h-[130%] object-cover -top-[15%]"
           />
@@ -154,7 +154,7 @@ export default function ParallaxGallery() {
         <div ref={wrapper2Ref} className="h-[50vh] md:h-[80vh] relative mt-32 md:-mt-32 z-20 overflow-hidden rounded-[3rem] border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
           <img 
             ref={img2Ref}
-            src="/tech-team-meeting.jpg" 
+            src="/tech-team-meeting-v2.jpg" 
             alt="Tech team meeting" 
             className="absolute w-full h-[140%] object-cover -top-[20%]"
           />
@@ -164,7 +164,7 @@ export default function ParallaxGallery() {
         <div ref={wrapper3Ref} className="h-[40vh] md:h-[50vh] relative mt-10 md:mt-40 z-10 overflow-hidden rounded-3xl border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
           <img 
             ref={img3Ref}
-            src="/creative-office-discussion.jpg" 
+            src="/creative-office-discussion-v2.jpg" 
             alt="Creative office discussion" 
             className="absolute w-full h-[140%] object-cover -top-[20%]"
           />
