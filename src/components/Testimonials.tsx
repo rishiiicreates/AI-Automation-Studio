@@ -15,26 +15,26 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      name: "Sarah Jenkins",
-      role: "CMO, TechFlow",
+      name: "Rohan Sharma",
+      role: "Founder, Riooo.inc",
       text: "Brokkrs completely transformed our operations. The automated support agent they built led to a 40% reduction in ticket resolution time.",
       bg: "bg-[#e8efd8]",
     },
     {
-      name: "Marcus Wright",
-      role: "Founder, Elevate",
+      name: "Ananya Patel",
+      role: "CTO, Vyapar Tech",
       text: "Working with this team was seamless. They understood our complex workflows immediately and delivered an automation system that exceeded all expectations.",
       bg: "bg-[#a3bfff]",
     },
     {
-      name: "Emily Chen",
-      role: "Director, InnovateX",
+      name: "Vikram Desai",
+      role: "Director, Nexus India",
       text: "The combination of robust infrastructure and intelligent agent design is rare. Brokkrs brings both to the table in spades. Highly recommended.",
       bg: "bg-[#d0c3ff]",
     },
     {
-      name: "David Miller",
-      role: "CEO, GrowthStudio",
+      name: "Neha Gupta",
+      role: "CEO, GrowthStudio IN",
       text: "Their strategic insights combined with world-class execution makes them our go-to partner for all backend and automation initiatives.",
       bg: "bg-[#fceba7]",
     }
