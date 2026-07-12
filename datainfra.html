@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #1a1a2e; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .data-stream {
+            background: linear-gradient(90deg, transparent, rgba(233, 69, 96, 0.5), transparent);
+            height: 2px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="w-[1000px] h-[600px] bg-[#16213e] border border-[#0f3460] rounded-xl shadow-2xl p-8 flex flex-col gap-6 relative overflow-hidden">
+        
+        <h2 class="text-3xl font-bold text-[#e94560] tracking-tight border-b border-[#0f3460] pb-4">Data Infrastructure Graph</h2>
+        
+        <div class="flex-1 relative flex items-center justify-center">
+            
+            <div class="absolute w-full h-[1px] bg-[#0f3460] top-1/2"></div>
+            <div class="absolute w-[1px] h-full bg-[#0f3460] left-1/2"></div>
+
+            <div class="absolute w-[400px] h-[400px] border border-[#e94560]/30 rounded-full"></div>
+            <div class="absolute w-[250px] h-[250px] border border-[#e94560]/50 rounded-full"></div>
+
+            <!-- Central Hub -->
+            <div class="absolute w-20 h-20 bg-[#e94560] rounded-full shadow-[0_0_40px_rgba(233,69,96,0.8)] z-10 flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            </div>
+
+            <!-- Satellites -->
+            <div class="absolute w-12 h-12 bg-[#0f3460] border-2 border-[#e94560] rounded-full top-[10%] left-[20%] flex items-center justify-center">
+                <span class="text-xs font-bold text-[#e94560]">API</span>
+            </div>
+            
+            <div class="absolute w-12 h-12 bg-[#0f3460] border-2 border-[#e94560] rounded-full bottom-[15%] right-[25%] flex items-center justify-center">
+                <span class="text-xs font-bold text-[#e94560]">DB</span>
+            </div>
+
+            <div class="absolute w-12 h-12 bg-[#0f3460] border-2 border-[#e94560] rounded-full top-[25%] right-[15%] flex items-center justify-center">
+                <span class="text-xs font-bold text-[#e94560]">REDIS</span>
+            </div>
+
+            <div class="absolute w-12 h-12 bg-[#0f3460] border-2 border-[#e94560] rounded-full bottom-[20%] left-[15%] flex items-center justify-center">
+                <span class="text-xs font-bold text-[#e94560]">CRON</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

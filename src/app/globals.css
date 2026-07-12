@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #FF5A00;
+  --color-brand-blue: #1239B8;
+  --color-brand-yellow: #FFDD73;
+  --color-brand-dark: #0F172A;
+  --color-brand-gray: #F8F8F8;
+  --color-brand-pink: #E81D73;
+  
+  --color-cream: #000000;
+  --color-accent: #1239B8;
+  
+  --font-sans: 'DoodleGiggle', sans-serif;
+  --font-serif: 'DoodleGiggle', serif;
+}
+
+@font-face {
+  font-family: 'DoodleGiggle';
+  src: url('/fonts/doodlegiggle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Hardware-Accelerated Seamless Crumpled Paper Texture */
+.css-paper-texture {
+  @apply absolute inset-0 pointer-events-none z-0;
+  opacity: 0.15;
+  mix-blend-mode: multiply;
+  
+  /* Force GPU rendering to prevent lag */
+  transform: translateZ(0);
+  will-change: transform;
+  
+  /* Optimized: Use static JPG instead of computationally heavy SVG fractalNoise */
+  background-image: url("/textures/crumpled-paper.jpg");
+  background-size: 512px 512px;
+  background-repeat: repeat;
+}
+
+/* Inherit border radius perfectly for cards */
+.rounded-inherit {
+  border-radius: inherit;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+* {
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Custom utilities used in pages */
+.text-display-xl { font-size: clamp(3rem, 8vw, 7rem); }
+.text-display-md { font-size: clamp(2rem, 5vw, 4.5rem); }
+.text-label { font-size: 0.75rem; letter-spacing: 0.15em; }
+.container-narrow { max-w: 800px; margin: 0 auto; padding: 0 1.5rem; }
+.container-wide { max-w: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

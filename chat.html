@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f3f4f6; color: #111; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    </style>
+</head>
+<body>
+    <div class="w-[450px] h-[800px] bg-white border-8 border-black rounded-[3rem] shadow-2xl overflow-hidden flex flex-col relative">
+        
+        <!-- iPhone Notch -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-7 bg-black rounded-b-3xl"></div>
+
+        <div class="h-24 bg-gray-50 border-b border-gray-200 flex items-end pb-4 px-6 gap-4">
+            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-xl">AI</div>
+            <div class="flex flex-col">
+                <span class="font-bold text-lg leading-tight">AI Support Agent</span>
+                <span class="text-xs text-green-500 font-semibold">Online</span>
+            </div>
+        </div>
+
+        <div class="flex-1 p-6 flex flex-col gap-4 overflow-y-auto bg-gray-50">
+            <div class="self-end bg-blue-500 text-white p-4 rounded-2xl rounded-br-sm max-w-[80%] shadow-sm">
+                Can you check the status of my order #8492?
+            </div>
+            
+            <div class="self-start bg-white border border-gray-200 text-gray-800 p-4 rounded-2xl rounded-bl-sm max-w-[85%] shadow-sm">
+                <p class="mb-2">Hello! I checked our database. Your order <strong>#8492</strong> has been shipped and is currently out for delivery.</p>
+                <div class="p-3 bg-gray-100 rounded-lg text-sm flex gap-3 items-center">
+                    <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                    <div>
+                        <div class="font-bold">FedEx Tracking</div>
+                        <div class="text-gray-500">Arriving today by 8PM</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="self-end bg-blue-500 text-white p-4 rounded-2xl rounded-br-sm max-w-[80%] shadow-sm mt-2">
+                That's amazing! Thanks so much.
+            </div>
+
+             <div class="self-start bg-white border border-gray-200 text-gray-800 p-4 rounded-2xl rounded-bl-sm max-w-[80%] shadow-sm">
+                You're very welcome! Let me know if you need anything else. 😊
+            </div>
+        </div>
+
+        <div class="h-20 bg-white border-t border-gray-200 flex items-center px-6">
+            <div class="flex-1 bg-gray-100 h-12 rounded-full border border-gray-200 flex items-center px-4 text-gray-400">
+                Type your message...
+            </div>
+            <div class="w-10 h-10 rounded-full bg-blue-500 ml-4 flex items-center justify-center text-white shadow-md">
+                <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+            </div>
+        </div>
+
+        <!-- iPhone Home Indicator -->
+        <div class="h-6 w-full flex justify-center items-center pb-2 bg-white">
+            <div class="w-32 h-1 bg-gray-300 rounded-full"></div>
+        </div>
+    </div>
+</body>
+</html>
